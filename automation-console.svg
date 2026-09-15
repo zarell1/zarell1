@@ -1,52 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
   <title id="title">ZARELL1 automation lab</title>
-  <desc id="desc">Animated amber CRT-style automation lab with a hooded operator, workflow console, terminal log and timeline.</desc>
+  <desc id="desc">Detailed amber CRT automation lab artwork with subtle live workflow animation.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#080a0a"/><stop offset="1" stop-color="#151108"/></linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f4a916"/><stop offset=".48" stop-color="#ffe08a"/><stop offset="1" stop-color="#ffb51f"/></linearGradient>
-    <pattern id="scan" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 0H8" stroke="#ffc447" stroke-opacity=".12"/></pattern>
-    <pattern id="microgrid" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M18 0H0V18" fill="none" stroke="#ffb52e" stroke-opacity=".09"/></pattern>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <path id="consolePath" d="M316 477H405C426 477 426 450 451 450H546C568 450 568 477 591 477H659C681 477 681 450 705 450H781" fill="none"/>
+    <pattern id="scanlines" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 0H1672" stroke="#ffd36a" stroke-opacity=".16" stroke-width="1"/></pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="10" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <path id="workflowPath" d="M428 583H570C602 583 602 566 636 566H757C791 566 791 583 822 583H972C1006 583 1006 566 1038 566H1170" fill="none"/>
     <style>
-      .pixel{shape-rendering:crispEdges}.mono{font-family:"Courier New",monospace;letter-spacing:1px}.amber{fill:#ffc447}.pale{fill:#f1ddb0}.dim{fill:#887246}.line{stroke:#ffb51f;stroke-width:2;fill:none}.thin{stroke:#815f1e;stroke-width:1;fill:none}
-      .flicker{animation:flicker 3.2s steps(2,end) infinite}.pulse{animation:pulse 1.7s steps(2,end) infinite}.blink{animation:blink 1s steps(2,end) infinite}.float{animation:float 2.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.sway{animation:sway 3.4s ease-in-out infinite;transform-box:fill-box;transform-origin:bottom center}
-      @keyframes flicker{0%,91%,100%{opacity:1}92%{opacity:.38}94%{opacity:.9}96%{opacity:.5}}@keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}@keyframes blink{0%,48%{opacity:1}49%,100%{opacity:.15}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}@keyframes sway{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(3deg)}}
+      .pulse{animation:pulse 1.7s steps(2,end) infinite}.blink{animation:blink 1s steps(2,end) infinite}.flicker{animation:flicker 4s steps(2,end) infinite}.scan{animation:scan 7s linear infinite}.float{animation:float 2.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.sway{animation:sway 3.5s ease-in-out infinite;transform-box:fill-box;transform-origin:bottom center}.rotate{animation:rotate 3.8s linear infinite;transform-box:fill-box;transform-origin:center}
+      @keyframes pulse{0%,100%{opacity:.32}50%{opacity:1}}@keyframes blink{0%,46%{opacity:1}47%,100%{opacity:.08}}@keyframes flicker{0%,90%,100%{opacity:.08}92%{opacity:.28}94%{opacity:.04}}@keyframes scan{from{transform:translateY(-941px)}to{transform:translateY(941px)}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}@keyframes sway{0%,100%{transform:rotate(-1.5deg)}50%{transform:rotate(2deg)}}@keyframes rotate{to{transform:rotate(360deg)}}
     </style>
   </defs>
 
-  <rect width="1200" height="760" rx="10" fill="url(#bg)"/>
-  <rect x="12" y="12" width="1176" height="736" rx="7" fill="url(#microgrid)"/>
-  <rect x="12" y="12" width="1176" height="736" rx="7" fill="url(#scan)" pointer-events="none"/>
-  <rect x="12" y="12" width="1176" height="736" rx="7" fill="none" stroke="#ffb51f" stroke-width="2"/>
-  <text x="32" y="36" class="mono pale" font-size="13">ZARELL1</text><text x="1168" y="36" text-anchor="end" class="mono dim" font-size="12">README.md // AUTOMATION LAB</text>
+  <rect width="1672" height="941" fill="#07090b"/>
+  <image x="0" y="0" width="1672" height="941" preserveAspectRatio="none" href="https://raw.githubusercontent.com/zarell1/zarell1/main/automation-lab.png" xlink:href="https://raw.githubusercontent.com/zarell1/zarell1/main/automation-lab.png"/>
 
-  <g transform="translate(32 50)">
-    <rect width="1136" height="294" fill="#0a0b0b" stroke="#ffb51f" stroke-width="2"/>
-    <path d="M14 14H1122V268H14Z" fill="#10100c" stroke="#815f1e"/>
-    <path d="M14 220H1122M14 244H1122" class="thin"/><path d="M14 26V210M70 26V210M108 26V210M1028 26V210M1072 26V210" class="thin"/>
-    <g opacity=".75"><rect x="35" y="48" width="72" height="152" fill="#080909" stroke="#815f1e"/><path d="M49 68H94M49 84H86M49 100H96M49 123H91M49 139H80M49 155H94M49 174H75" stroke="#a77822"/><circle cx="92" cy="183" r="4" fill="#ffb51f" class="pulse"/></g>
-    <g transform="translate(92 102)" class="sway"><path d="M0 92C8 70 18 46 33 24C40 50 47 70 65 92" fill="#0b0c0b" stroke="#ffb51f"/><path d="M33 25C23 7 19-3 26-13M34 24C43 5 50 0 55-10M34 22C13 16 6 11 0 1M37 24C56 18 64 10 72 0" class="line"/><rect x="20" y="88" width="31" height="19" fill="#13110b" stroke="#ffb51f"/></g>
-    <path d="M154 42H246V55H154Z" fill="#11120f" stroke="#ffb51f"/><path d="M170 55V86M230 55V86" class="thin"/><path d="M181 86H219L208 99H192Z" fill="#ffb51f" class="pulse"/>
-    <g transform="translate(214 74)"><rect width="118" height="75" fill="#070908" stroke="#ffb51f"/><path d="M15 20H96M15 34H81M15 48H72M15 61H101" stroke="#b78024"/><circle cx="96" cy="18" r="4" fill="#ffca4d" class="pulse"/></g>
-    <g transform="translate(352 74)"><rect width="130" height="88" fill="#070908" stroke="#ffb51f"/><path d="M14 18H114M14 32H86M14 46H106M14 60H72" stroke="#b78024"/><path d="M88 72h26" class="line"/></g>
-    <g transform="translate(260 102)" class="float"><path d="M30 134C32 97 46 76 73 58C82 36 97 16 122 7C147 20 160 40 165 62C190 76 204 100 211 134Z" fill="#090b0b" stroke="#ffb51f" stroke-width="3"/><path d="M61 69C68 39 89 20 122 10C151 24 167 47 171 73L151 103H86Z" fill="#15130f" stroke="#ffc447" stroke-width="2"/><path d="M82 68L101 48H143L159 69L151 96H88Z" fill="#080909" stroke="#815f1e" stroke-width="2"/><path d="M103 77h10M135 77h10" stroke="#ffc447" stroke-width="5" class="pulse"/><path d="M111 90h27" stroke="#ffb51f" stroke-width="2" class="flicker"/><path d="M78 105C63 119 56 130 54 151H187C183 129 176 115 161 104" fill="#0c0d0d" stroke="#815f1e" stroke-width="3"/><path d="M95 132H155M119 113V144" class="thin"/></g>
-    <path d="M25 215H1111L1091 231H45Z" fill="#080908" stroke="#ffb51f" stroke-width="2"/><path d="M26 231H1110" stroke="#815f1e" stroke-width="4"/>
-    <g transform="translate(475 184)"><rect width="70" height="28" fill="#0b0c0b" stroke="#ffb51f"/><path d="M12 10H57M12 18H48" class="thin"/></g><g transform="translate(577 201)"><rect width="74" height="13" fill="#14120c" stroke="#ffb51f"/><path d="M9 5H65M16 1V12M29 1V12M42 1V12M55 1V12" class="thin"/></g><g transform="translate(695 178)"><rect width="88" height="40" fill="#090a09" stroke="#ffb51f"/><circle cx="22" cy="20" r="8" fill="none" stroke="#ffb51f"/><path d="M40 12H73M40 22H64M40 32H75" class="thin"/></g>
-    <g transform="translate(570 24)"><rect width="534" height="112" fill="#080909" stroke="#ffb51f" stroke-width="2"/><path d="M14 14H520V98H14Z" fill="none" stroke="#b78024" stroke-dasharray="8 5"/><text x="40" y="66" class="mono amber" font-size="57" font-weight="700">ZARELL1</text><text x="43" y="94" class="mono pale" font-size="22">// ACCESS GRANTED</text><rect x="408" y="75" width="13" height="17" fill="#ffc447" class="blink"/></g>
-    <g transform="translate(1017 151)" class="flicker"><text class="mono amber" font-size="13"><tspan x="0" dy="0">AUTOMATE</tspan><tspan x="0" dy="20">BUILD</tspan><tspan x="0" dy="20">IMPROVE</tspan><tspan x="0" dy="20">REPEAT</tspan><tspan x="0" dy="20">A MORE</tspan><tspan x="0" dy="20">EFFICIENT</tspan><tspan x="0" dy="20">TOMORROW</tspan></text></g>
-    <g transform="translate(884 192)"><rect width="84" height="34" fill="#090a09" stroke="#ffb51f"/><path d="M12 11H72M12 19H60M12 27H67" class="thin"/><circle cx="66" cy="10" r="3" fill="#ffc447" class="pulse"/></g><g transform="translate(1000 213)" class="sway"><path d="M0 20C7 3 14-9 25-23M25-23C17-35 17-43 22-51M25-23C37-32 42-39 44-48M25-23C9-22 2-27-4-36" class="line"/><path d="M8 18H44L37 29H15Z" fill="#13110b" stroke="#ffb51f"/></g>
+  <!-- animated phosphor layer -->
+  <g pointer-events="none">
+    <rect width="1672" height="941" fill="url(#scanlines)" opacity=".2" class="scan"/>
+    <rect width="1672" height="941" fill="#ffb51f" opacity=".035" class="flicker"/>
+
+    <!-- moving workflow signal -->
+    <path d="M428 583H570C602 583 602 566 636 566H757C791 566 791 583 822 583H972C1006 583 1006 566 1038 566H1170" fill="none" stroke="#ffbf32" stroke-width="2" opacity=".35"/>
+    <g filter="url(#glow)"><circle r="7" fill="#fff0a6" class="pulse"><animateMotion dur="3.2s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#workflowPath"/></animateMotion></circle><circle r="4" fill="#ff9c15"><animateMotion dur="3.2s" begin="1.06s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#workflowPath"/></animateMotion></circle></g>
+
+    <!-- rotating gear highlight over the raster gear -->
+    <g transform="translate(706 583)" opacity=".72" filter="url(#softGlow)"><g class="rotate"><path d="M0-34L8-27L21-30L24-17L35-10L28 0L35 10L24 17L21 30L8 27L0 35L-8 27L-21 30L-24 17L-35 10L-28 0L-35-10L-24-17L-21-30L-8-27Z" fill="none" stroke="#ffd15a" stroke-width="3"/><circle r="13" fill="none" stroke="#fff0a6" stroke-width="2"/></g></g>
+
+    <!-- living indicator lights and terminal cursor -->
+    <g class="pulse" filter="url(#glow)"><circle cx="624" cy="583" r="5" fill="#fff0a6"/><circle cx="821" cy="583" r="5" fill="#fff0a6"/><circle cx="1004" cy="583" r="5" fill="#fff0a6"/></g>
+    <rect x="1381" y="666" width="10" height="17" fill="#ffc447" class="blink"/>
+    <rect x="713" y="419" width="12" height="18" fill="#ffc447" class="blink" opacity=".75"/>
+
+    <!-- subtle idle motion on the foreground operators -->
+    <g class="float" opacity=".24"><path d="M174 671h214" stroke="#ffc447" stroke-width="3"/><path d="M184 676h192" stroke="#fff0a6" stroke-opacity=".5"/></g>
+    <g class="sway" opacity=".17"><path d="M1510 396c-8-34-1-59 12-80M1512 365c-21-14-29-28-31-42M1515 347c21-12 29-25 34-42" fill="none" stroke="#ffc447" stroke-width="3"/></g>
+
+    <!-- animated CRT vignette and frame glint -->
+    <rect x="20" y="14" width="1632" height="913" rx="7" fill="none" stroke="#ffe08a" stroke-opacity=".24"/>
+    <path d="M40 16H1600" stroke="#fff0a6" stroke-opacity=".2" stroke-width="2" class="flicker"/>
   </g>
-
-  <g transform="translate(32 358)">
-    <rect width="1136" height="218" fill="#0a0b0a" stroke="#ffb51f" stroke-width="2"/><text x="22" y="25" class="mono amber" font-size="15">// LIVE AUTOMATION CONSOLE</text><text x="1113" y="25" text-anchor="end" class="mono dim" font-size="11">DISCIPLINE IS A SYSTEM</text><path d="M22 42H1114" class="thin"/>
-    <g transform="translate(26 61)" class="float"><path d="M15 105C20 75 35 52 58 40C63 19 82 2 105-5C129 3 145 20 151 42C173 52 184 76 188 105Z" fill="#080a0a" stroke="#ffb51f" stroke-width="3"/><path d="M45 46C57 20 75 5 104-4C132 6 151 25 157 48L139 77H61Z" fill="#13130f" stroke="#ffc447" stroke-width="2"/><path d="M67 43L83 28H126L143 45L136 67H72Z" fill="#070909" stroke="#815f1e"/><path d="M82 50h9M119 50h9" stroke="#ffc447" stroke-width="4" class="pulse"/><path d="M78 82H150L178 108H47Z" fill="#0c0d0d" stroke="#815f1e" stroke-width="2"/><path d="M71 91H147" class="thin"/><rect x="126" y="83" width="22" height="13" fill="#ffb51f" class="blink"/></g>
-    <g transform="translate(232 59)"><rect width="570" height="137" fill="#0b0c0b" stroke="#815f1e"/><text x="24" y="26" class="mono dim" font-size="11">IDEA</text><text x="178" y="26" class="mono dim" font-size="11">AUTOMATE</text><text x="347" y="26" class="mono dim" font-size="11">EXECUTE</text><text x="478" y="26" class="mono dim" font-size="11">RESULTS</text><g transform="translate(36 53)"><rect width="58" height="49" fill="#10110d" stroke="#ffb51f"/><path d="M14 14H43M14 24H43M14 34H34" class="thin"/><path d="M19 10v30" class="line"/></g><g transform="translate(286 69)" filter="url(#glow)"><g><animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="3.6s" repeatCount="indefinite"/><path d="M0-29L7-22L19-24L21-13L30-7L23 0L30 7L21 13L19 24L7 22L0 29L-7 22L-19 24L-21 13L-30 7L-23 0L-30-7L-21-13L-19-24L-7-22Z" fill="url(#gold)"/><circle r="12" fill="#0a0b0a" stroke="#ffb51f" stroke-width="3"/></g><circle r="4" fill="#ffe08a" class="pulse"/></g><g transform="translate(430 45)"><rect width="58" height="49" fill="#10110d" stroke="#ffb51f"/><path d="M17 16L29 26L17 36M35 36H44" class="line"/></g><g transform="translate(502 52)"><rect width="45" height="42" fill="#10110d" stroke="#ffb51f"/><path d="M12 31V22M21 31V15M30 31V10" stroke="#ffc447" stroke-width="5"/></g><path d="M94 78H250C267 78 267 69 282 69M316 69H412C427 69 427 78 430 78M488 78H500" class="line"/><text x="48" y="122" class="mono amber" font-size="11">IDEA</text><text x="263" y="122" class="mono amber" font-size="11">AUTOMATE</text><text x="425" y="122" class="mono amber" font-size="11">EXECUTE</text><text x="498" y="122" class="mono amber" font-size="11">RESULTS</text></g>
-    <g transform="translate(820 59)"><rect width="290" height="137" fill="#070908" stroke="#ffb51f"/><circle cx="16" cy="15" r="3" fill="#ffb51f" class="pulse"/><circle cx="28" cy="15" r="3" fill="#a76121" class="flicker"/><circle cx="40" cy="15" r="3" fill="#705821"/><text x="17" y="42" class="mono pale" font-size="11">&gt; workflow started...</text><text x="17" y="59" class="mono pale" font-size="11">&gt; task running...</text><text x="17" y="76" class="mono pale" font-size="11">&gt; task completed.</text><text x="17" y="93" class="mono pale" font-size="11">&gt; workflow complete.</text><text x="17" y="110" class="mono pale" font-size="11">&gt; system ready.</text><rect x="150" y="112" width="8" height="14" fill="#ffc447" class="blink"/></g>
-  </g>
-
-  <g transform="translate(32 590)"><text x="0" y="18" class="mono pale" font-size="14">// OPERATOR LOG</text><text x="596" y="18" class="mono pale" font-size="14">// AUTOMATION TIMELINE</text><text x="1136" y="18" text-anchor="end" class="mono dim" font-size="10">AUTOMATION IS A HABIT</text><rect x="0" y="30" width="526" height="102" fill="#090a0a" stroke="#ffb51f"/><text x="18" y="53" class="mono pale" font-size="11">[10:24] &gt; system initialized</text><text x="18" y="70" class="mono pale" font-size="11">[10:24] &gt; workflow started</text><text x="18" y="87" class="mono pale" font-size="11">[10:25] &gt; running task...</text><text x="18" y="104" class="mono pale" font-size="11">[10:25] &gt; task completed</text><text x="18" y="121" class="mono pale" font-size="11">[10:25] &gt; system ready</text><rect x="495" y="113" width="8" height="13" fill="#ffc447" class="blink"/><rect x="556" y="30" width="580" height="102" fill="#090a0a" stroke="#ffb51f"/><text x="574" y="52" class="mono dim" font-size="10">MON</text><text x="574" y="67" class="mono dim" font-size="10">TUE</text><text x="574" y="82" class="mono dim" font-size="10">WED</text><text x="574" y="97" class="mono dim" font-size="10">THU</text><text x="574" y="112" class="mono dim" font-size="10">FRI</text><text x="574" y="127" class="mono dim" font-size="10">SAT</text><g transform="translate(620 43)" class="flicker"><path d="M0 0H490M0 15H490M0 30H490M0 45H490M0 60H490M0 75H490" stroke="#28271f" stroke-width="10" stroke-dasharray="8 5"/><path d="M55 0v10M120 15v10M188 30v10M245 45v10M318 60v10M410 75v10M465 15v10" stroke="#ffb51f" stroke-width="10" stroke-dasharray="8 5" class="pulse"/></g></g>
-  <g transform="translate(32 734)"><text x="0" y="0" class="mono amber" font-size="12">DISCIPLINE TURNS STRENGTH INTO RESULTS.</text><text x="1136" y="0" text-anchor="end" class="mono dim" font-size="11">KEEP BUILDING // KEEP REPEATING</text></g>
-  <rect x="12" y="12" width="1176" height="736" rx="7" fill="none" stroke="#ffe08a" stroke-opacity=".18"/><rect x="12" y="12" width="1176" height="736" rx="7" fill="url(#scan)" opacity=".25" pointer-events="none"><animateTransform attributeName="transform" type="translate" from="0 -760" to="0 760" dur="8s" repeatCount="indefinite"/></rect>
 </svg>
 

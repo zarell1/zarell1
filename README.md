@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/zarell1/zarell1/main/automation-console.svg" alt="ZARELL1 live automation console" width="100%" />
+  <img src="https://raw.githubusercontent.com/zarell1/zarell1/main/automation-lab.gif" alt="ZARELL1 animated automation lab" width="100%" />
 </p>
 
 ## Public work

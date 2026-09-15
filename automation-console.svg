@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">ZARELL1 live automation console</title>
+  <desc id="desc">Animated pixel-art automation console with a hooded operator, workflow signal, terminal log, and discipline quote.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#090909"/>
+      <stop offset="1" stop-color="#15110a"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffb52e"/>
+      <stop offset="0.5" stop-color="#ffe18a"/>
+      <stop offset="1" stop-color="#f39a16"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scanlines" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="1" fill="#ffc44a" opacity=".11"/>
+    </pattern>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0H0V16" fill="none" stroke="#ffb52e" stroke-opacity=".12" stroke-width="1"/>
+    </pattern>
+    <path id="signalPath" d="M356 290 H446 C465 290 465 250 488 250 H570 C594 250 594 290 615 290 H704" fill="none"/>
+    <style>
+      .pixel { shape-rendering: crispEdges; }
+      .mono { font-family: "Courier New", monospace; letter-spacing: 1px; }
+      .amber { fill: #ffc44a; }
+      .soft { fill: #e7d4a2; }
+      .dim { fill: #8b7446; }
+      .line { stroke: #ffb52e; stroke-width: 2; fill: none; }
+      .thin { stroke: #8b651e; stroke-width: 1; fill: none; }
+      .pulse { animation: pulse 1.8s steps(2,end) infinite; }
+      .flicker { animation: flicker 3s steps(2,end) infinite; }
+      .float { animation: float 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .typing { animation: typing 4s steps(2,end) infinite; }
+      @keyframes pulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+      @keyframes flicker { 0%,92%,100% { opacity: 1; } 93% { opacity: .35; } 94% { opacity: .9; } 96% { opacity: .45; } }
+      @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+      @keyframes typing { 0%,20% { opacity: .35; } 35%,80% { opacity: 1; } 85%,100% { opacity: .45; } }
+      @keyframes scan { from { transform: translateY(-8px); } to { transform: translateY(520px); } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="520" rx="10" fill="url(#bg)"/>
+  <rect x="12" y="12" width="1176" height="496" rx="7" fill="url(#grid)" opacity=".55"/>
+  <rect x="12" y="12" width="1176" height="496" rx="7" fill="url(#scanlines)" pointer-events="none"/>
+  <rect x="12" y="12" width="1176" height="496" rx="7" fill="none" stroke="#ffb52e" stroke-width="2"/>
+
+  <g class="flicker">
+    <text x="34" y="42" class="mono dim" font-size="13">// LIVE AUTOMATION CONSOLE</text>
+    <text x="1164" y="42" text-anchor="end" class="mono dim" font-size="12">ZARELL1 / README</text>
+  </g>
+
+  <g class="float" transform="translate(40 72)">
+    <rect x="0" y="0" width="226" height="300" fill="#0a0a08" stroke="#8b651e"/>
+    <rect x="16" y="16" width="194" height="172" fill="#10100d" stroke="#ffb52e"/>
+    <path d="M47 155V91L72 54H143L172 91V155Z" fill="#11100d" stroke="#ffb52e" stroke-width="3"/>
+    <path d="M68 89L83 63H132L151 89V137H68Z" fill="#050505" stroke="#8b651e" stroke-width="2"/>
+    <rect x="84" y="101" width="11" height="7" fill="#ffc44a" class="pulse"/>
+    <rect x="126" y="101" width="11" height="7" fill="#ffc44a" class="pulse"/>
+    <path d="M92 123H130" stroke="#ffc44a" stroke-width="3" class="flicker"/>
+    <path d="M38 157H64M156 157H184" stroke="#ffb52e" stroke-width="3"/>
+    <text x="26" y="222" class="mono amber" font-size="14">OPERATOR_01</text>
+    <text x="26" y="246" class="mono soft" font-size="12">controls the boring</text>
+    <text x="26" y="266" class="mono soft" font-size="12">so ideas can move</text>
+    <circle cx="190" cy="246" r="4" fill="#ffb52e" class="pulse"/>
+  </g>
+
+  <g transform="translate(292 72)">
+    <rect x="0" y="0" width="612" height="300" fill="#0a0a08" stroke="#8b651e"/>
+    <rect x="18" y="18" width="576" height="66" fill="#11100d" stroke="#ffb52e"/>
+    <text x="38" y="50" class="mono amber" font-size="28" font-weight="700">ZARELL1</text>
+    <text x="38" y="72" class="mono soft" font-size="13">discipline // strength // repeat</text>
+    <rect x="350" y="34" width="214" height="30" fill="#090909" stroke="#8b651e"/>
+    <text x="366" y="55" class="mono dim" font-size="12">operator mode: BUILD</text>
+
+    <rect x="18" y="104" width="576" height="178" fill="#0d0d0a" stroke="#8b651e"/>
+    <text x="38" y="130" class="mono dim" font-size="12">IDEA</text>
+    <text x="208" y="130" class="mono dim" font-size="12">AUTOMATE</text>
+    <text x="382" y="130" class="mono dim" font-size="12">EXECUTE</text>
+    <text x="526" y="130" class="mono dim" font-size="12">RESULT</text>
+
+    <g class="flicker">
+      <rect x="38" y="151" width="54" height="54" fill="#14120d" stroke="#ffb52e"/>
+      <path d="M51 178H79M65 164V192" stroke="#ffc44a" stroke-width="4"/>
+      <circle cx="65" cy="178" r="13" fill="none" stroke="#ffc44a" stroke-width="3"/>
+    </g>
+
+    <path d="M98 178 H178 C196 178 196 160 216 160 H272 C292 160 292 178 310 178 H362 C380 178 380 160 400 160 H458 C478 160 478 178 498 178 H536" class="line"/>
+    <g filter="url(#glow)">
+      <circle r="7" fill="#ffe18a" class="pulse">
+        <animateMotion dur="3.6s" repeatCount="indefinite" rotate="auto"><mpath href="#signalPath"/></animateMotion>
+      </circle>
+      <circle r="4" fill="#ff9a16" opacity=".7">
+        <animateMotion dur="3.6s" begin="1.2s" repeatCount="indefinite" rotate="auto"><mpath href="#signalPath"/></animateMotion>
+      </circle>
+    </g>
+
+    <g transform="translate(240 178)" filter="url(#glow)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
+        <path d="M0-36L8-27L22-30L24-17L36-10L27 0L36 10L24 17L22 30L8 27L0 36L-8 27L-22 30L-24 17L-36 10L-27 0L-36-10L-24-17L-22-30L-8-27Z" fill="#ffc44a"/>
+        <circle r="16" fill="#0b0b09" stroke="#ffb52e" stroke-width="3"/>
+      </g>
+      <circle r="5" fill="#ffe18a" class="pulse"/>
+    </g>
+    <rect x="210" y="228" width="60" height="28" fill="#11100d" stroke="#8b651e"/>
+    <text x="240" y="247" text-anchor="middle" class="mono amber" font-size="11">AUTO</text>
+
+    <g class="flicker">
+      <rect x="478" y="144" width="76" height="68" fill="#14120d" stroke="#ffb52e"/>
+      <path d="M492 160H540M492 177H530M492 194H536" stroke="#ffc44a" stroke-width="3"/>
+    </g>
+    <g class="pulse">
+      <rect x="42" y="238" width="140" height="24" fill="#11100d" stroke="#8b651e"/>
+      <text x="54" y="255" class="mono soft" font-size="11">SIGNAL MOVING...</text>
+    </g>
+  </g>
+
+  <g transform="translate(926 72)">
+    <rect x="0" y="0" width="234" height="300" fill="#0a0a08" stroke="#8b651e"/>
+    <rect x="16" y="16" width="202" height="226" fill="#060606" stroke="#ffb52e"/>
+    <circle cx="31" cy="30" r="4" fill="#ffb52e" class="pulse"/>
+    <circle cx="45" cy="30" r="4" fill="#c25a24" class="flicker"/>
+    <circle cx="59" cy="30" r="4" fill="#6f5b2a"/>
+    <text x="30" y="68" class="mono soft" font-size="12">&gt; workflow started...</text>
+    <text x="30" y="91" class="mono soft" font-size="12">&gt; task running...</text>
+    <text x="30" y="114" class="mono soft" font-size="12">&gt; task completed.</text>
+    <text x="30" y="137" class="mono soft" font-size="12">&gt; system ready.</text>
+    <text x="30" y="160" class="mono dim" font-size="12">&gt; keep going.</text>
+    <rect x="30" y="181" width="9" height="16" fill="#ffc44a" class="pulse"/>
+    <text x="30" y="222" class="mono dim" font-size="11">automation.log</text>
+    <text x="30" y="270" class="mono amber" font-size="12">NO SHORTCUTS</text>
+  </g>
+
+  <g transform="translate(40 398)">
+    <rect x="0" y="0" width="1120" height="86" fill="#0a0a08" stroke="#ffb52e"/>
+    <text x="26" y="30" class="mono amber" font-size="17">DISCIPLINE TURNS STRENGTH INTO RESULTS.</text>
+    <text x="26" y="56" class="mono soft" font-size="13">Keep showing up. Keep building. Let the system speak.</text>
+    <text x="1088" y="48" text-anchor="end" class="mono dim" font-size="12">&gt; repeat</text>
+    <rect x="1069" y="58" width="10" height="15" fill="#ffc44a" class="pulse"/>
+  </g>
+
+  <rect x="12" y="12" width="1176" height="496" rx="7" fill="none" stroke="#ffe18a" stroke-opacity=".18"/>
+  <rect x="12" y="12" width="1176" height="496" rx="7" fill="url(#scanlines)" opacity=".25" pointer-events="none">
+    <animateTransform attributeName="transform" type="translate" from="0 -520" to="0 520" dur="8s" repeatCount="indefinite"/>
+  </rect>
+</svg>

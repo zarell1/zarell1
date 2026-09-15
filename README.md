@@ -2,12 +2,10 @@
 
 Building software, developer tools, and practical automation.
 
-## Selected work
+## Selected public work
 
-- [HEIC Fast](https://github.com/zarell1/heic-fast) — a Windows tool for working with HEIC images.
-- [UTool](https://github.com/zarell1/UTool) — a practical utility project.
-- [Status Checker](https://github.com/zarell1/status-checker) — monitoring and online statistics tooling.
-- [UTool Releases](https://github.com/zarell1/UTool-Releases) — signed releases and update metadata.
+- [HEIC Fast Releases](https://github.com/zarell1/heic-fast-releases) — public downloads of HEIC Fast for Windows.
+- [UTool Releases](https://github.com/zarell1/UTool-Releases) — signed application releases and update metadata.
 - [utool-oauth-callback](https://github.com/zarell1/utool-oauth-callback) — a lightweight OAuth callback page.
 
 ## Current focus

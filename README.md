@@ -1,16 +1,23 @@
-## Hi there 👋
+# Zarell1
 
-<!--
-**zarell1/zarell1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Building software, developer tools, and practical automation.
 
-Here are some ideas to get you started:
+## Selected work
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- [HEIC Fast](https://github.com/zarell1/heic-fast) — a Windows tool for working with HEIC images.
+- [UTool](https://github.com/zarell1/UTool) — a practical utility project.
+- [Status Checker](https://github.com/zarell1/status-checker) — monitoring and online statistics tooling.
+- [UTool Releases](https://github.com/zarell1/UTool-Releases) — signed releases and update metadata.
+- [utool-oauth-callback](https://github.com/zarell1/utool-oauth-callback) — a lightweight OAuth callback page.
+
+## Current focus
+
+- shipping small Windows tools that are easy to use
+- improving release and update workflows
+- building reliable automation around developer workflows
+
+## Principles
+
+- Keep tools simple and useful.
+- Prefer reproducible builds and verifiable results.
+- Improve through small, testable iterations.

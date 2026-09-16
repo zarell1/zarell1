@@ -13,7 +13,7 @@ ESC = lambda s: html.escape(str(s), quote=True)
 
 
 def validate(config):
-    for key, limit in [('project_name', 60), ('description', 360), ('focus', 140)]:
+    for key, limit in [('project_name', 60), ('description', 360)]:
         value = config.get(key)
         if not isinstance(value, str) or not value.strip() or len(value) > limit:
             raise ValueError(f'{key}: enter 1–{limit} characters')
@@ -34,9 +34,8 @@ def text(x, y, value, size=15, color='#e2c58b', extra=''):
 
 def panel(w, h, body):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
-<defs><pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#ffbf36" stroke-opacity=".045"/></pattern><linearGradient id="shade" x2="0" y2="1"><stop stop-color="#11130f"/><stop offset="1" stop-color="#080c0e"/></linearGradient></defs>
 <style>.cursor{{animation:blink 1.6s steps(1) infinite}}.pulse{{animation:pulse 4s ease-in-out infinite}}@keyframes blink{{50%{{opacity:0}}}}@keyframes pulse{{50%{{opacity:.25}}}}@media(prefers-reduced-motion:reduce){{.cursor,.pulse{{animation:none}}}}</style>
-<rect width="{w}" height="{h}" fill="url(#shade)"/><rect width="{w}" height="{h}" fill="url(#grid)"/>
+<rect width="{w}" height="{h}" fill="#0d1117"/>
 <path d="M3 16V3H16M{w-16} 3H{w-3}V16M3 {h-16}V{h-3}H16M{w-16} {h-3}H{w-3}V{h-16}" stroke="#ffbf36" stroke-width="2" fill="none"/>
 <g font-family="Consolas,DejaVu Sans Mono,monospace">{body}</g></svg>\n'''
 
@@ -67,7 +66,7 @@ def tools_card(icons, mobile=False):
         y = y0 + (i//cols)*79
         source = re.sub(r'<\?xml[^>]*\?>', '', icons[name]).strip()
         source = source.replace('<svg ', f'<svg x="{cx-18}" y="{y-22}" width="36" height="36" ', 1)
-        body += f'<rect x="{cx-26}" y="{y-28}" width="52" height="52" fill="#101512" stroke="#45371c"/>{source}'
+        body += f'<rect x="{cx-26}" y="{y-28}" width="52" height="52" fill="#0d1117" stroke="#45371c"/>{source}'
         body += text(cx, y+40, label, 10, '#c8ab71', 'text-anchor="middle"')
     h = y0 + ((len(ICONS)-1)//cols)*79 + 57
     return panel(w, h, body)
@@ -82,10 +81,6 @@ def build(config, icons, readme):
         out[f'assets/current-project{suffix}.svg'] = project_card(config, mobile)
         out[f'assets/project-releases{suffix}.svg'] = panel(w, 38, text(14 if mobile else 24, 25, 'РЕЛИЗЫ ↗', 14, '#ffbf36'))
         out[f'assets/tools-panel{suffix}.svg'] = tools_card(icons, mobile)
-    focus_lines = textwrap.wrap(config['focus'], 83)
-    out['assets/profile-focus.svg'] = panel(900, 36+len(focus_lines)*21, ''.join(text(20, 30+i*21, line, 16, '#c8ab71') for i,line in enumerate(focus_lines)))
-    mobile_focus = textwrap.wrap(config['focus'], 29)
-    out['assets/profile-focus-mobile.svg'] = panel(320, 28+len(mobile_focus)*21, ''.join(text(14, 27+i*21, line, 15, '#c8ab71') for i,line in enumerate(mobile_focus)))
     version = hashlib.sha256(''.join(out.values()).encode()).hexdigest()[:12]
     base = 'https://raw.githubusercontent.com/zarell1/zarell1/main/assets/'
     def picture(name, width, alt):
@@ -101,7 +96,6 @@ def build(config, icons, readme):
 <td width="400" valign="top">{picture('tools-panel',400,'Языки и инструменты: '+', '.join(label for _,label in ICONS))}</td>
 </tr>
 </table>
-{picture('profile-focus',900,config['focus'])}
 <!-- PROFILE:END -->'''
     if readme.count('<!-- PROFILE:START -->') != 1 or readme.count('<!-- PROFILE:END -->') != 1:
         raise ValueError('README must contain exactly one PROFILE marker pair')

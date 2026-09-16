@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="190" viewBox="0 0 480 190">
-<defs><pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M16 0H0V16" fill="none" stroke="#ffbf36" stroke-opacity=".045"/></pattern><linearGradient id="shade" x2="0" y2="1"><stop stop-color="#11130f"/><stop offset="1" stop-color="#080c0e"/></linearGradient></defs>
 <style>.cursor{animation:blink 1.6s steps(1) infinite}.pulse{animation:pulse 4s ease-in-out infinite}@keyframes blink{50%{opacity:0}}@keyframes pulse{50%{opacity:.25}}@media(prefers-reduced-motion:reduce){.cursor,.pulse{animation:none}}</style>
-<rect width="480" height="190" fill="url(#shade)"/><rect width="480" height="190" fill="url(#grid)"/>
+<rect width="480" height="190" fill="#0d1117"/>
 <path d="M3 16V3H16M464 3H477V16M3 174V187H16M464 187H477V174" stroke="#ffbf36" stroke-width="2" fill="none"/>
 <g font-family="Consolas,DejaVu Sans Mono,monospace"><text x="24" y="29" font-size="13" fill="#d9a342" >LIFETIME PROJECT</text><text x="24" y="74" font-size="34" fill="#ffbf36" font-weight="bold">UTool</text><rect class="cursor" x="449" y="48" width="7" height="20" fill="#ffbf36"/><text x="24" y="126" font-size="18" fill="#e2c58b" >Универсальный инструмент для</text><text x="24" y="151" font-size="18" fill="#e2c58b" >UmbrellaRP.</text></g></svg>

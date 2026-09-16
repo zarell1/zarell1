@@ -17,16 +17,16 @@
 <td width="400" valign="top" align="center">
 <picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tools-heading-mobile.svg"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tools-heading.svg" width="400" alt="Языки и инструменты"></picture>
 <p>
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/python.svg" width="44" height="44" alt="Python" title="Python">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/csharp.svg" width="44" height="44" alt="C#" title="C#">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/cplusplus.svg" width="44" height="44" alt="C++" title="C++">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/lua.svg" width="44" height="44" alt="Lua" title="Lua"><br>
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/java.svg" width="44" height="44" alt="Java" title="Java">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/html5.svg" width="44" height="44" alt="HTML5" title="HTML5">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/css3.svg" width="44" height="44" alt="CSS3" title="CSS3">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/javascript.svg" width="44" height="44" alt="JavaScript" title="JavaScript"><br>
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/git.svg" width="44" height="44" alt="Git" title="Git">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/powershell.svg" width="44" height="44" alt="PowerShell" title="PowerShell">
+<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/python.svg?v=amber" width="44" height="44" alt="Python" title="Python">
+<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/csharp.svg?v=amber" width="44" height="44" alt="C#" title="C#">
+<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/cplusplus.svg?v=amber" width="44" height="44" alt="C++" title="C++">
+<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/lua.svg?v=amber" width="44" height="44" alt="Lua" title="Lua"><br>
+<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/java.svg?v=amber" width="44" height="44" alt="Java" title="Java">
+<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/html5.svg?v=amber" width="44" height="44" alt="HTML5" title="HTML5">
+<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/css3.svg?v=amber" width="44" height="44" alt="CSS3" title="CSS3">
+<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/javascript.svg?v=amber" width="44" height="44" alt="JavaScript" title="JavaScript"><br>
+<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/git.svg?v=amber" width="44" height="44" alt="Git" title="Git">
+<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/powershell.svg?v=amber" width="44" height="44" alt="PowerShell" title="PowerShell">
 </p>
 </td>
 </tr>

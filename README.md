@@ -5,8 +5,6 @@
 
 <br>
 
-I build programs that automate routine work.
-
 ### <img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/icon-code.svg" width="20" height="20" alt=""> Public projects
 
 <table>
@@ -28,6 +26,4 @@ I build programs that automate routine work.
 
 <a href="https://github.com/zarell1?tab=repositories">All public repositories ↗</a>
 
-<br><br>
 
-<sub>Discipline turns effort into progress.</sub>

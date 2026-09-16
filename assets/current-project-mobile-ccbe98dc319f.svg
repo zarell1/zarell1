@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="201" viewBox="0 0 200 201">
+<defs><pattern id="pixels" width="48" height="32" patternUnits="userSpaceOnUse"><path d="M1 1h20v12H1zM24 1h22v12H24zM1 16h11v13H1zM15 16h31v13H15z" fill="#252b2d" fill-opacity=".18"/><path d="M2 13h18M25 13h20M16 29h29" stroke="#d99b28" stroke-opacity=".045"/></pattern><radialGradient id="amber" cx=".1" cy="0" r="1"><stop stop-color="#e8a925" stop-opacity=".055"/><stop offset="1" stop-color="#e8a925" stop-opacity="0"/></radialGradient></defs>
+<style>.cursor{animation:blink 1.6s steps(1) infinite}.pulse{animation:pulse 4s ease-in-out infinite}@keyframes blink{50%{opacity:0}}@keyframes pulse{50%{opacity:.25}}@media(prefers-reduced-motion:reduce){.cursor,.pulse{animation:none}}</style>
+<rect width="200" height="201" fill="#0d1117"/>
+<rect x="4" y="4" width="192" height="193" fill="url(#pixels)"/><rect width="200" height="201" fill="url(#amber)"/>
+<path d="M3 16V185M197 16V185" stroke="#725420" stroke-opacity=".3" fill="none"/>
+<g stroke="#ffbf36" stroke-width="2" fill="none" shape-rendering="crispEdges"><path id="frame-top" d="M3 16V3H16M184 3H197V16"/></g>
+<g font-family="Consolas,DejaVu Sans Mono,monospace"><text x="14" y="29" font-size="13" fill="#d9a342" >LIFETIME PROJECT</text><text x="14" y="74" font-size="29" fill="#ffbf36" font-weight="bold" textLength="87.0" lengthAdjust="spacingAndGlyphs">UTool</text><rect class="cursor" x="109.0" y="51.96" width="8" height="23.200000000000003" fill="#ffbf36"/><text x="14" y="121" font-size="15" fill="#e2c58b" >Универсальный</text><text x="14" y="143" font-size="15" fill="#e2c58b" >инструмент для</text><text x="14" y="165" font-size="15" fill="#e2c58b" >UmbrellaRP.</text></g></svg>

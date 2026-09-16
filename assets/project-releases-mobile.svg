@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="38" viewBox="0 0 200 38">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="42" viewBox="0 0 200 42">
+<defs><pattern id="pixels" width="48" height="32" patternUnits="userSpaceOnUse"><path d="M1 1h20v12H1zM24 1h22v12H24zM1 16h11v13H1zM15 16h31v13H15z" fill="#252b2d" fill-opacity=".18"/><path d="M2 13h18M25 13h20M16 29h29" stroke="#d99b28" stroke-opacity=".045"/></pattern><radialGradient id="amber" cx=".1" cy="0" r="1"><stop stop-color="#e8a925" stop-opacity=".055"/><stop offset="1" stop-color="#e8a925" stop-opacity="0"/></radialGradient></defs>
 <style>.cursor{animation:blink 1.6s steps(1) infinite}.pulse{animation:pulse 4s ease-in-out infinite}@keyframes blink{50%{opacity:0}}@keyframes pulse{50%{opacity:.25}}@media(prefers-reduced-motion:reduce){.cursor,.pulse{animation:none}}</style>
-<rect width="200" height="38" fill="#0d1117"/>
-<path d="M3 16V3H16M184 3H197V16M3 22V35H16M184 35H197V22" stroke="#ffbf36" stroke-width="2" fill="none"/>
-<g font-family="Consolas,DejaVu Sans Mono,monospace"><text x="14" y="25" font-size="14" fill="#ffbf36" >РЕЛИЗЫ ↗</text></g></svg>
+<rect width="200" height="42" fill="#0d1117"/>
+<rect x="4" y="4" width="192" height="34" fill="url(#pixels)"/><rect width="200" height="42" fill="url(#amber)"/>
+<path d="M3 16V26M197 16V26" stroke="#725420" stroke-opacity=".3" fill="none"/>
+<g stroke="#ffbf36" stroke-width="2" fill="none" shape-rendering="crispEdges"><path id="frame-bottom" d="M3 26V39H16M184 39H197V26"/></g>
+<g font-family="Consolas,DejaVu Sans Mono,monospace"><path d="M14 1H176" stroke="#74541d" stroke-opacity=".6"/><text x="14" y="26" font-size="14" fill="#ffbf36" >РЕЛИЗЫ ↗</text></g></svg>

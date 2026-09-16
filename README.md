@@ -10,10 +10,10 @@
 <table>
 <tr>
 <td width="440" valign="top">
-<a href="https://github.com/zarell1/UTool-Releases"><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/current-project-mobile.svg?v=7ba87ffc2129"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/current-project.svg?v=7ba87ffc2129" width="480" alt="UTool — Универсальный инструмент для UmbrellaRP."></picture></a><br>
-<a href="https://github.com/zarell1/UTool-Releases/releases"><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/project-releases-mobile.svg?v=7ba87ffc2129"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/project-releases.svg?v=7ba87ffc2129" width="480" alt="Релизы UTool"></picture></a>
+<a href="https://github.com/zarell1/UTool-Releases"><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/current-project-mobile.svg?v=ccbe98dc319f"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/current-project.svg?v=ccbe98dc319f" width="480" alt="UTool — Универсальный инструмент для UmbrellaRP."></picture></a><br>
+<a href="https://github.com/zarell1/UTool-Releases/releases"><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/project-releases-mobile.svg?v=ccbe98dc319f"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/project-releases.svg?v=ccbe98dc319f" width="480" alt="Релизы UTool"></picture></a>
 </td>
-<td width="400" valign="top"><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tools-panel-mobile.svg?v=7ba87ffc2129"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tools-panel.svg?v=7ba87ffc2129" width="400" alt="Языки и инструменты: Python, C#, C++, Lua, Java, HTML5, CSS3, JavaScript, Git, PowerShell"></picture></td>
+<td width="400" valign="top"><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tools-panel-mobile.svg?v=ccbe98dc319f"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tools-panel.svg?v=ccbe98dc319f" width="400" alt="Языки и инструменты: Python, C#, C++, Lua, Java, HTML5, CSS3, JavaScript, Git, PowerShell"></picture></td>
 </tr>
 </table>
 <!-- PROFILE:END -->

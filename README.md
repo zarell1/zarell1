@@ -5,31 +5,17 @@
 
 <br>
 
-<!-- Edit project text in assets/current-project.svg and current-project-mobile.svg.
-     Keep the project and release links below in sync when switching projects.
-     Logos remain separate original Devicon images. -->
+<!-- PROFILE:START -->
+<!-- Generated from profile.json by scripts/render_profile.py. -->
 <table>
 <tr>
 <td width="440" valign="top">
-<a href="https://github.com/zarell1/UTool-Releases"><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/current-project-mobile.svg"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/current-project.svg" width="480" alt="Lifetime Project — UTool. Универсальный инструмент для UmbrellaRP. Сейчас в работе."></picture></a><br>
-<a href="https://github.com/zarell1/UTool-Releases/releases"><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/project-releases-mobile.svg"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/project-releases.svg" width="480" alt="Релизы UTool ↗"></picture></a>
+<a href="https://github.com/zarell1/UTool-Releases"><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/current-project-mobile.svg?v=1f585cc737eb"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/current-project.svg?v=1f585cc737eb" width="480" alt="UTool — Универсальный инструмент для UmbrellaRP."></picture></a><br>
+<a href="https://github.com/zarell1/UTool-Releases/releases"><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/project-releases-mobile.svg?v=1f585cc737eb"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/project-releases.svg?v=1f585cc737eb" width="480" alt="Релизы UTool"></picture></a>
 </td>
-<td width="400" valign="top" align="center">
-<picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tools-heading-mobile.svg"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tools-heading.svg" width="400" alt="Языки и инструменты"></picture>
-<p>
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/python.svg?v=amber" width="44" height="44" alt="Python" title="Python">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/csharp.svg?v=amber" width="44" height="44" alt="C#" title="C#">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/cplusplus.svg?v=amber" width="44" height="44" alt="C++" title="C++">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/lua.svg?v=amber" width="44" height="44" alt="Lua" title="Lua"><br>
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/java.svg?v=amber" width="44" height="44" alt="Java" title="Java">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/html5.svg?v=amber" width="44" height="44" alt="HTML5" title="HTML5">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/css3.svg?v=amber" width="44" height="44" alt="CSS3" title="CSS3">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/javascript.svg?v=amber" width="44" height="44" alt="JavaScript" title="JavaScript"><br>
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/git.svg?v=amber" width="44" height="44" alt="Git" title="Git">
-<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tiles/powershell.svg?v=amber" width="44" height="44" alt="PowerShell" title="PowerShell">
-</p>
-</td>
+<td width="400" valign="top"><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tools-panel-mobile.svg?v=1f585cc737eb"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tools-panel.svg?v=1f585cc737eb" width="400" alt="Языки и инструменты: Python, C#, C++, Lua, Java, HTML5, CSS3, JavaScript, Git, PowerShell"></picture></td>
 </tr>
 </table>
-
+<img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/profile-focus.svg?v=1f585cc737eb" width="900" alt="Программы для автоматизации рутинных задач">
+<!-- PROFILE:END -->
 <p><sub><a href="https://github.com/zarell1?tab=repositories">Все публичные репозитории ↗</a></sub></p>

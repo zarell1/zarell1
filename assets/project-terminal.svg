@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Automation terminal">
+<style>@media(prefers-reduced-motion:reduce){.cursor,.packet{animation:none}}.cursor{animation:blink 1.6s steps(1) infinite}.packet{animation:travel 4s ease-in-out infinite}@keyframes blink{50%{opacity:0}}@keyframes travel{0%,15%{transform:translateX(0);opacity:0}25%{opacity:1}75%{opacity:1}90%,100%{transform:translateX(28px);opacity:0}}</style>
+<rect width="64" height="64" fill="#0d1117"/><rect x="2" y="2" width="60" height="60" rx="10" fill="#161b22" stroke="#554323"/>
+<path d="M12 19V12H19M45 12H52V19M12 45V52H19M45 52H52V45" fill="none" stroke="#ffbf36" stroke-width="2"/>
+<path d="m20 25 8 7-8 7" fill="none" stroke="#ffbf36" stroke-width="3" stroke-linecap="square"/>
+<path class="cursor" d="M34 39h10" stroke="#ffbf36" stroke-width="3"/>
+<path d="M18 47H46" stroke="#554323"/><rect class="packet" x="18" y="46" width="3" height="2" fill="#ffe0a0"/>
+</svg>

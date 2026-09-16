@@ -5,6 +5,10 @@
 
 <br>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/tech-stack.svg" width="1200" alt="Programming languages and tools: Python, HTML, C sharp, C plus plus, Lua, Java, JavaScript, CSS, Git and PowerShell">
+</p>
+
 ### <img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/icon-code.svg" width="20" height="20" alt=""> Public projects
 
 <table>

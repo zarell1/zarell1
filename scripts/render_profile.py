@@ -84,6 +84,8 @@ def build(config, icons, readme):
         out[f'assets/tools-panel{suffix}.svg'] = tools_card(icons, mobile)
     focus_lines = textwrap.wrap(config['focus'], 83)
     out['assets/profile-focus.svg'] = panel(900, 36+len(focus_lines)*21, ''.join(text(20, 30+i*21, line, 16, '#c8ab71') for i,line in enumerate(focus_lines)))
+    mobile_focus = textwrap.wrap(config['focus'], 29)
+    out['assets/profile-focus-mobile.svg'] = panel(320, 28+len(mobile_focus)*21, ''.join(text(14, 27+i*21, line, 15, '#c8ab71') for i,line in enumerate(mobile_focus)))
     version = hashlib.sha256(''.join(out.values()).encode()).hexdigest()[:12]
     base = 'https://raw.githubusercontent.com/zarell1/zarell1/main/assets/'
     def picture(name, width, alt):
@@ -99,7 +101,7 @@ def build(config, icons, readme):
 <td width="400" valign="top">{picture('tools-panel',400,'Языки и инструменты: '+', '.join(label for _,label in ICONS))}</td>
 </tr>
 </table>
-<img src="{base}profile-focus.svg?v={version}" width="900" alt="{ESC(config['focus'])}">
+{picture('profile-focus',900,config['focus'])}
 <!-- PROFILE:END -->'''
     if readme.count('<!-- PROFILE:START -->') != 1 or readme.count('<!-- PROFILE:END -->') != 1:
         raise ValueError('README must contain exactly one PROFILE marker pair')

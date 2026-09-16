@@ -2,6 +2,7 @@ import unittest
 import xml.etree.ElementTree as ET
 from render_profile import build, validate, project_card, ROOT, ICONS
 import json
+import re
 
 
 class ProfileTests(unittest.TestCase):
@@ -29,7 +30,8 @@ class ProfileTests(unittest.TestCase):
             if name.endswith('.svg'):
                 ET.fromstring(content)
                 self.assertNotIn('СЕЙЧАС В РАБОТЕ', content)
-        self.assertIn('A &amp; &lt;B&gt;', result['assets/current-project.svg'])
+        card = next(content for name, content in result.items() if re.fullmatch(r'assets/current-project-[0-9a-f]{12}\.svg', name))
+        self.assertIn('A &amp; &lt;B&gt;', card)
         self.assertIn('https://example.org/releases?a=1&amp;b=2', result['README.md'])
         self.assertTrue(result['README.md'].startswith('Keep me\n'))
         self.assertTrue(result['README.md'].endswith('Keep me too'))

@@ -94,9 +94,10 @@ def build(config, icons, readme):
         out[f'assets/project-releases{suffix}.svg'] = panel(w, 42, release_body, frame='bottom')
         out[f'assets/tools-panel{suffix}.svg'] = tools_card(icons, mobile)
     version = hashlib.sha256(''.join(out.values()).encode()).hexdigest()[:12]
+    out = {name.replace('.svg', f'-{version}.svg'): content for name, content in out.items()}
     base = 'https://raw.githubusercontent.com/zarell1/zarell1/main/assets/'
     def picture(name, width, alt):
-        return f'<picture><source media="(max-width: 600px)" srcset="{base}{name}-mobile.svg?v={version}"><img src="{base}{name}.svg?v={version}" width="{width}" alt="{ESC(alt)}"></picture>'
+        return f'<picture><source media="(max-width: 600px)" srcset="{base}{name}-mobile-{version}.svg"><img src="{base}{name}-{version}.svg" width="{width}" alt="{ESC(alt)}"></picture>'
     section = f'''<!-- PROFILE:START -->
 <!-- Generated from profile.json by scripts/render_profile.py. -->
 <table>
@@ -119,6 +120,12 @@ if __name__ == '__main__':
     config = json.loads((ROOT/'profile.json').read_text(encoding='utf-8'))
     icons = {name: (ROOT/f'assets/icons/{name}.svg').read_text(encoding='utf-8') for name, _ in ICONS}
     result = build(config, icons, (ROOT/'README.md').read_text(encoding='utf-8'))
+    # Replace only our obsolete content-addressed outputs; original assets stay intact.
+    assets = (ROOT/'assets').resolve()
+    for previous in assets.glob('*.svg'):
+        if re.fullmatch(r'(current-project|project-releases|tools-panel)(-mobile)?-[0-9a-f]{12}\.svg', previous.name):
+            if previous.resolve().parent == assets and f'assets/{previous.name}' not in result:
+                previous.unlink()
     for filename, content in result.items():
         (ROOT/filename).write_text(content, encoding='utf-8', newline='\n')
     print(f'Rendered {len(result)} files')

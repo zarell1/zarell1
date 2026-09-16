@@ -1,9 +1,33 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/zarell1/zarell1/main/automation-lab.gif" alt="ZARELL1 animated automation lab" width="100%" />
-</p>
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/workshop-still.png">
+  <img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/workshop.gif" width="1200" alt="ZARELL1 — software and automation. A pixel-art workshop with a programmer and a small robot.">
+</picture>
 
-## Public work
+<br>
 
-- [UTool Releases](https://github.com/zarell1/UTool-Releases) — public application releases and update metadata.
-- [utool-oauth-callback](https://github.com/zarell1/utool-oauth-callback) — a lightweight public OAuth callback page.
-- [All public repositories](https://github.com/zarell1?tab=repositories) — only public work is linked here.
+I build programs that automate routine work.
+
+### <img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/icon-code.svg" width="20" height="20" alt=""> Public projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/zarell1/UTool-Releases/releases"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/avatar-bot.gif" width="72" height="72" alt="UTool releases — pixel robot"></a>
+<h3><a href="https://github.com/zarell1/UTool-Releases">UTool</a></h3>
+<p>Application releases and updates.</p>
+<p><a href="https://github.com/zarell1/UTool-Releases/releases"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/icon-package.svg" width="16" height="16" alt="">&nbsp; Releases ↗</a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/zarell1/utool-oauth-callback"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/avatar-builder.gif" width="72" height="72" alt="OAuth callback — pixel programmer"></a>
+<h3><a href="https://github.com/zarell1/utool-oauth-callback">OAuth callback</a></h3>
+<p>Sign-in callback page for UTool.</p>
+<p><a href="https://github.com/zarell1/utool-oauth-callback"><img src="https://raw.githubusercontent.com/zarell1/zarell1/main/assets/icon-code.svg" width="16" height="16" alt="">&nbsp; Source ↗</a></p>
+</td>
+</tr>
+</table>
+
+<a href="https://github.com/zarell1?tab=repositories">All public repositories ↗</a>
+
+<br><br>
+
+<sub>Discipline turns effort into progress.</sub>

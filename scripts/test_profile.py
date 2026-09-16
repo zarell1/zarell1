@@ -1,10 +1,24 @@
 import unittest
 import xml.etree.ElementTree as ET
-from render_profile import build, validate, ROOT, ICONS
+from render_profile import build, validate, project_card, ROOT, ICONS
 import json
 
 
 class ProfileTests(unittest.TestCase):
+    def test_cursor_follows_title_and_frames_join(self):
+        config = json.loads((ROOT/'profile.json').read_text(encoding='utf-8'))
+        for mobile in [False, True]:
+            for title in ['UTool', 'A longer project name that wraps']:
+                root = ET.fromstring(project_card(dict(config, project_name=title), mobile))
+                ns = {'s': 'http://www.w3.org/2000/svg'}
+                labels = root.findall('.//s:text[@font-weight="bold"]', ns)
+                cursor = root.find('.//s:rect[@class="cursor"]', ns)
+                last = labels[-1]
+                expected = float(last.attrib['x']) + float(last.attrib['textLength'])
+                self.assertGreaterEqual(float(cursor.attrib['x']), expected)
+                self.assertLessEqual(float(cursor.attrib['x'])-expected, 8.01)
+                self.assertIsNone(root.find('.//s:path[@id="frame-bottom"]', ns))
+
     def test_render_and_update(self):
         config = json.loads((ROOT/'profile.json').read_text(encoding='utf-8'))
         icons = {name: (ROOT/f'assets/icons/{name}.svg').read_text(encoding='utf-8') for name, _ in ICONS}

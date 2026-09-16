@@ -32,11 +32,19 @@ def text(x, y, value, size=15, color='#e2c58b', extra=''):
     return f'<text x="{x}" y="{y}" font-size="{size}" fill="{color}" {extra}>{ESC(value)}</text>'
 
 
-def panel(w, h, body):
+def panel(w, h, body, frame='full'):
+    corners = ''
+    if frame != 'bottom':
+        corners += f'<path id="frame-top" d="M3 16V3H16M{w-16} 3H{w-3}V16"/>'
+    if frame != 'top':
+        corners += f'<path id="frame-bottom" d="M3 {h-16}V{h-3}H16M{w-16} {h-3}H{w-3}V{h-16}"/>'
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+<defs><pattern id="pixels" width="48" height="32" patternUnits="userSpaceOnUse"><path d="M1 1h20v12H1zM24 1h22v12H24zM1 16h11v13H1zM15 16h31v13H15z" fill="#252b2d" fill-opacity=".18"/><path d="M2 13h18M25 13h20M16 29h29" stroke="#d99b28" stroke-opacity=".045"/></pattern><radialGradient id="amber" cx=".1" cy="0" r="1"><stop stop-color="#e8a925" stop-opacity=".055"/><stop offset="1" stop-color="#e8a925" stop-opacity="0"/></radialGradient></defs>
 <style>.cursor{{animation:blink 1.6s steps(1) infinite}}.pulse{{animation:pulse 4s ease-in-out infinite}}@keyframes blink{{50%{{opacity:0}}}}@keyframes pulse{{50%{{opacity:.25}}}}@media(prefers-reduced-motion:reduce){{.cursor,.pulse{{animation:none}}}}</style>
 <rect width="{w}" height="{h}" fill="#0d1117"/>
-<path d="M3 16V3H16M{w-16} 3H{w-3}V16M3 {h-16}V{h-3}H16M{w-16} {h-3}H{w-3}V{h-16}" stroke="#ffbf36" stroke-width="2" fill="none"/>
+<rect x="4" y="4" width="{w-8}" height="{h-8}" fill="url(#pixels)"/><rect width="{w}" height="{h}" fill="url(#amber)"/>
+<path d="M3 16V{h-16}M{w-3} 16V{h-16}" stroke="#725420" stroke-opacity=".3" fill="none"/>
+<g stroke="#ffbf36" stroke-width="2" fill="none" shape-rendering="crispEdges">{corners}</g>
 <g font-family="Consolas,DejaVu Sans Mono,monospace">{body}</g></svg>\n'''
 
 
@@ -47,14 +55,17 @@ def project_card(config, mobile=False):
     body = text(pad, 29, 'LIFETIME PROJECT', 13, '#d9a342')
     y = 74
     for line in title_lines:
-        body += text(pad, y, line, title_size, '#ffbf36', 'font-weight="bold"')
+        title_width = len(line) * title_size * .6
+        body += text(pad, y, line, title_size, '#ffbf36', f'font-weight="bold" textLength="{title_width}" lengthAdjust="spacingAndGlyphs"')
         y += title_size + 8
-    body += f'<rect class="cursor" x="{w-pad-7}" y="48" width="7" height="20" fill="#ffbf36"/>'
+    cursor_x = min(w-pad-8, pad+title_width+8)
+    cursor_y = y-title_size-8-title_size*.76
+    body += f'<rect class="cursor" x="{cursor_x}" y="{cursor_y}" width="8" height="{title_size*.8}" fill="#ffbf36"/>'
     y += 10
     for line in desc_lines:
         body += text(pad, y, line, size)
         y += size + 7
-    return panel(w, max(182, y + 14), body)
+    return panel(w, max(182, y + 14), body, frame='top')
 
 
 def tools_card(icons, mobile=False):
@@ -79,7 +90,8 @@ def build(config, icons, readme):
         suffix = '-mobile' if mobile else ''
         w = 200 if mobile else 480
         out[f'assets/current-project{suffix}.svg'] = project_card(config, mobile)
-        out[f'assets/project-releases{suffix}.svg'] = panel(w, 38, text(14 if mobile else 24, 25, 'РЕЛИЗЫ ↗', 14, '#ffbf36'))
+        release_body = f'<path d="M{14 if mobile else 24} 1H{w-24}" stroke="#74541d" stroke-opacity=".6"/>' + text(14 if mobile else 24, 26, 'РЕЛИЗЫ ↗', 14, '#ffbf36')
+        out[f'assets/project-releases{suffix}.svg'] = panel(w, 42, release_body, frame='bottom')
         out[f'assets/tools-panel{suffix}.svg'] = tools_card(icons, mobile)
     version = hashlib.sha256(''.join(out.values()).encode()).hexdigest()[:12]
     base = 'https://raw.githubusercontent.com/zarell1/zarell1/main/assets/'
